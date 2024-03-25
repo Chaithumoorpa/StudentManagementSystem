@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Courses</title>
+</head>
+<body>
+    <h1>Courses Enrolled by Student</h1>
+    <ul>
+        <!-- Loop through courses retrieved from the server and display them -->
+        <li th:each="course : ${courses}" th:text="${course.courseName}"></li>
+    </ul>
+</body>
+</html>

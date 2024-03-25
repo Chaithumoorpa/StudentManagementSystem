@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Student</title>
+</head>
+<body>
+    <h1>Drop Student from Course</h1>
+    <form action="/drop" method="post">
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required>
+        <br>
+        <label for="courseId">Course ID:</label>
+        <input type="text" id="courseId" name="courseId" required>
+        <br>
+        <button type="submit">Drop</button>
+    </form>
+</body>
+</html>

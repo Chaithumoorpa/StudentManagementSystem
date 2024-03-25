@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    
+    <!-- Student Management Tab -->
+    <h2>Student Management <a href="/logout">Logout</a></h2>
+    <ul>
+        <li><a href="/add-student">Add a new student</a></li>
+        <li><a href="/remove-student">Remove a student</a></li>
+        <li><a href="/search-student">Search for a student</a></li>
+        <li><a href="/display-students">Display all students</a></li>
+    </ul>
+
+    <!-- Course Management Tab -->
+    <h2>Course Management</h2>
+    <ul>
+        <li><a href="/courses/add">Add a new course</a></li>
+        <li><a href="/search-course/results?criteria=course_name&query=">Remove a course</a></li>
+        <li><a href="/search-course">Search for a course</a></li>
+        <li><a href="/courses">Display all courses</a></li>
+    </ul>
+
+    <!-- Enrollment Management Tab -->
+    <h2>Enrollment Management</h2>
+    <ul>
+        <li><a href="/enroll-student">Enroll a student in a course</a></li>
+        <li><a href="/drop-student">Drop a student from a course</a></li>
+        <li><a href="/display-student-courses/{studentId}">Display all courses a student is enrolled in</a></li>
+		<li><a href="/display-course-students/{courseId}">Display all students enrolled in a course</a></li>
+
+    </ul>
+
+    <!-- Grades Management Tab -->
+    <h2>Grades Management</h2>
+    <ul>
+        <li><a href="/assign-grade">Assign a grade to a student for a course</a></li>
+        <li><a href="/update-grade">Update a grade for a student in a course</a></li>
+        <li><a href="/calculate-gpa">Calculate GPA for each student</a></li>
+        <li><a href="/display-course-grades">Display grades for all students in a course</a></li>
+    </ul>
+</body>
+</html>
